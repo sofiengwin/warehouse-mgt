@@ -1,4 +1,6 @@
 [![codecov](https://codecov.io/gh/sofiengwin/warehouse-mgt/graph/badge.svg?token=NXNS6HTZ3C)](https://codecov.io/gh/sofiengwin/warehouse-mgt)
+![test](https://github.com/github/docs/actions/workflows/test.yml/badge.svg)
+
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
