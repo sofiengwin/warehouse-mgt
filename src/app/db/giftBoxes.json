@@ -1,0 +1,32 @@
+{
+  "birthday-box": {
+    "id": "birthday-box",
+    "name": "Birthday Box",
+    "products": [
+      "birthday-cupcake",
+      "100-visa-gift-card",
+      "birthday-card"
+    ]
+  },
+  "valentines-box": {
+    "id": "valentines-box",
+    "name": "Valentines Box",
+    "products": [
+      "red-roses-bouquet",
+      "box-of-chocolates",
+      "love-card",
+      "women-perfume"
+    ]
+  },
+  "client-gift-box": {
+    "id": "client-gift-box",
+    "name": "Client Gift Box",
+    "products": [
+      "fruit-basket",
+      "bottle-of-wine",
+      "pen"
+    ]
+  }
+}
+
+

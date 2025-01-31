@@ -1,0 +1,70 @@
+{
+  "orders": [
+    {
+      "id": "1",
+      "total": 19.90,
+      "orderDate": "2021-01-01",
+      "shippingAddress": "124 Railsway",
+      "customerName": "John Doe",
+      "quantity": 1,
+      "customerEmail": "john.doe@example.come",
+      "lineItems": [
+        "birthday-box",
+        "valentines-box",
+        "client-gift-box"
+      ]
+    },
+    {
+      "id": "2",
+      "total": 19.90,
+      "orderDate": "2021-01-01",
+      "shippingAddress": "124 Railsway",
+      "customerName": "John Doe",
+      "customerEmail": "john.doe@example.come",
+      "quantity": 3,
+      "lineItems": [
+        "birthday-box",
+        "valentines-box",
+        "client-gift-box"
+      ]
+    },
+    {
+      "id": "3",
+      "total": 19.90,
+      "orderDate": "2021-01-01",
+      "shippingAddress": "124 Railsway",
+      "customerName": "John Doe",
+      "customerEmail": "john.doe@example.come",
+      "quantity": 2,
+      "lineItems": [
+        "birthday-box",
+        "client-gift-box"
+      ]
+    },
+    {
+      "id": "4",
+      "total": 19.90,
+      "orderDate": "2021-01-01",
+      "shippingAddress": "124 Railsway",
+      "customerName": "John Doe",
+      "customerEmail": "john.doe@example.come",
+      "quantity": 1,
+      "lineItems": [
+        "valentines-box"
+      ]
+    },
+    {
+      "id": "5",
+      "total": 19.90,
+      "orderDate": "2021-01-01",
+      "shippingAddress": "124 Railsway",
+      "customerName": "John Doe",
+      "customerEmail": "john.doe@example.come",
+      "quantity": 1,
+      "lineItems": [
+        "birthday-box",
+        "valentines-box"
+      ]
+    }
+  ]
+}
