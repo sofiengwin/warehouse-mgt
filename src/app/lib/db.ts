@@ -18,7 +18,7 @@ interface IOrderWithoutLineItem {
 }
 
 type IOrder = IOrderWithoutLineItem & {lineItems: string[]}
-type ITransformedOrder = IOrderWithoutLineItem & {lineItems: Dict<ILineItem[]>}
+export type ITransformedOrder = IOrderWithoutLineItem & {lineItems: Dict<ILineItem[]>}
 
 interface ILineItem {
   lineItemId: string;
@@ -72,6 +72,7 @@ function orderDetail(order: IOrder): ITransformedOrder {
 
   return {
     ...order,
+    orderDate: formatDate(new Date()), //  Hard todays date to make testing easier
     lineItems: lineItems
   }
 }
@@ -87,4 +88,9 @@ function productsInGiftBox(lineItemId: string, giftBox: IGiftBox): ILineItem[] {
       }
     }
   }).filter((product) => product != undefined)
+}
+
+function formatDate(date: Date): string {
+  const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', year: 'numeric' };
+  return new Intl.DateTimeFormat('en-US', options).format(date);
 }

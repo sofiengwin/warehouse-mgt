@@ -1,14 +1,3 @@
-// module.exports = {
-//   testEnvironment: 'node',
-//   collectCoverage: true,
-//   coverageDirectory: 'coverage',
-//   // setupFilesAfterEnv: ['<rootDir>/src/app/__tests__/setup.js'],
-//   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
-//   transform: {
-//     '^.+\\.ts$': 'ts-jest'
-//   }
-// };
-
 import type { Config } from 'jest'
 import nextJest from 'next/jest'
 // import '@testing-library/jest-dom'

@@ -17,8 +17,8 @@ function PickingList() {
         {Object.entries(pickListData).map(([name, quantity], index) => (
           <tr key={index}>
             <td>{index + 1}</td>
-            <td>{name}</td>
-            <td>{quantity}</td>
+            <td data-testid='name'>{name}</td>
+            <td data-testid='quantity'>{quantity}</td>
           </tr>
         ))}
       </tbody>
