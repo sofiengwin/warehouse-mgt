@@ -1,5 +1,5 @@
 import { mockGiftBoxes, mockOrders, mockProducts } from '../mocks';
-import { pickingList, packingList, findOrderById } from '../app/lib/db';
+import { pickingList, packingList, findOrderById, formatDate } from '../app/lib/db';
 
 
 jest.mock('../app/db/orders.json', () => mockOrders);
@@ -24,7 +24,7 @@ describe('packingList', () => {
     expect(result).toEqual([
       {
         id: '1',
-        orderDate: '2021-01-01',
+        orderDate: formatDate(new Date()),
         customerName: 'John Doe',
         customerEmail: 'john@example.com',
         shippingAddress: '123 Main St',
@@ -45,7 +45,7 @@ describe('findOrderById', () => {
     const result = findOrderById('1');
     expect(result).toEqual({
       id: '1',
-      orderDate: '2021-01-01',
+      orderDate: formatDate(new Date()),
       customerName: 'John Doe',
       customerEmail: 'john@example.com',
       shippingAddress: '123 Main St',
